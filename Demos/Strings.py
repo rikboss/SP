@@ -17,6 +17,9 @@ for i in range(size - 1, 0, -1):  # loop second part
     mystring = ''  # resetting string
 
 
+# minimalistic approach - removing loops, removing variables, step by step until this is left
+s = 4
+for i in list(range(1,s+1))+list(range(s-1,0,-1)):print(' '*(s-i)+'*'*i)
 
 # using str.format() to add padding, manually building the main string
 mystring = '' #initial string
@@ -33,7 +36,7 @@ mystring = '' #initial string
 size = 4 #size, could also be input from user
 for i in range(0,size): #loop first part
     mystring += '*' #adding a * to the string
-    print(f'{mystring:>{size}}') # printing with padding
+    print(f'{mystring:>{size}}') # printing with padding met > van right justify
 for i in range(size-1,0,-1): #loop second part
     mystring = mystring[:-1] #removing a character * from the string
     print(f'{mystring:>{size}}') # printing with padding
