@@ -16,6 +16,8 @@ for i in range(size - 1, 0, -1):  # loop second part
     print(mystring)  # printing string
     mystring = ''  # resetting string
 
+
+
 # using str.format() to add padding, manually building the main string
 mystring = '' #initial string
 size = 4 #size, could also be input from user
